@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML>
+<!-- 
+MIT Licence - English
+Copyright (c) 2010 Lars Chr. Albrecht
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, 
+including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
+subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+MIT Licence - German
+Copyright (c) 2010 Lars Chr. Albrecht
+
+Hiermit wird unentgeltlich, jeder Person, die eine Kopie der Software und der zugehörigen Dokumentationen (die "Software") erhält, die Erlaubnis erteilt, 
+uneingeschränkt zu benutzen, inklusive und ohne Ausnahme, dem Recht, sie zu verwenden, kopieren, ändern, fusionieren, verlegen, verbreiten, unterlizenzieren und/oder zu verkaufen, 
+und Personen, die diese Software erhalten, diese Rechte zu geben, unter den folgenden Bedingungen:
+Der obige Urheberrechtsvermerk und dieser Erlaubnisvermerk sind in allen Kopien oder Teilkopien der Software beizulegen.
+DIE SOFTWARE WIRD OHNE JEDE AUSDRÜCKLICHE ODER IMPLIZIERTE GARANTIE BEREITGESTELLT, EINSCHLIESSLICH DER GARANTIE ZUR BENUTZUNG FÜR DEN VORGESEHENEN ODER EINEM 
+BESTIMMTEN ZWECK SOWIE JEGLICHER RECHTSVERLETZUNG, JEDOCH NICHT DARAUF BESCHRÄNKT. IN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER FÜR JEGLICHEN SCHADEN 
+ODER SONSTIGE ANSPRÜCHE HAFTBAR ZU MACHEN, OB INFOLGE DER ERFÜLLUNG EINES VERTRAGES, EINES DELIKTES ODER ANDERS IM ZUSAMMENHANG MIT DER SOFTWARE ODER SONSTIGER 
+VERWENDUNG DER SOFTWARE ENTSTANDEN.
+
+-->
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+	<link href="css/general.css" rel="stylesheet" type="text/css" />
+	
+	<script language="javascript" src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script language="javascript" src="js/general.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="info">
+			<div id="left">
+				<div id="time">Wednesday 07/04/2010</div>
+				<div id="ip">192.168.178.25</div>
+			</div>
+			<div id="center">
+				<div id="selected">Informationen</div>
+			</div>
+			<div id="right">
+				<div id="status">
+					<div id="statusSpeed"><span id="statusSpeed1">100kb</span> / <span id="statusSpeed2">unlimited</span></div>
+					<div id="statusAjax">... updated ...</div>
+				</div>
+			</div>
+		</div>
+		<div id="controls">
+			<div id="controlMenu">
+				<ul class="menu">
+					<li class="menuItem" id="menuActionStart" rel="action/start"><img src="pics/icons/start.png" alt="start" title="start" /></li>
+					<li class="menuItem" id="menuActionStop" rel="action/stop"><img src="pics/icons/stop.png" alt="stop" title="stop" /></li>
+					<li class="menuItem" id="menuActionPause" rel="action/pause"><img src="pics/icons/pause.png" alt="pause" title="pause" /></li>
+					<li class="menuItem" id="menuActionReconnect" rel="action/reconnect"><img src="pics/icons/reconnect.png" alt="reconnect" title="reconnect" /></li>
+					<li class="menuItem" id="menuActionRestart" rel="action/restart"><img src="pics/icons/restart.png" alt="restart" title="restart" /></li>
+				</ul>
+			</div>
+			<div id="openControlPad">
+			&gt;
+			</div>
+			<div id="controlPad">
+				<div id="controlPadContent">
+					<div class="controlPadCell"><label for="controlPremium">Premium</label><input type="checkbox" name="controlPremium" id="controlPremium" rel="action/set/premiumenabled/" /></div>
+					<div class="controlPadCell"><label for="controlReconnect">Reconnect</label><input type="checkbox" name="controlReconnect" id="controlReconnect" rel="action/set/reconnectenabled/" /></div>
+					<div class="controlPadCell"><label for="controlMaxSpeed">Max. Speed</label><input type="text" name="controlMaxSpeed" id="controlMaxSpeed" rel="action/set/download/limit/" /></div>
+					<div class="controlPadCell"><label for="controlMaxDownloads">Max. Downloads</label><input type="text" name="controlMaxDownloads" id="controlMaxDownloads" rel="action/set/download/max/" /></div>
+				</div>
+			</div>
+		</div>
+		<div id="head"></div>
+		<div id="mainMenu">
+			<ul class="menu">
+				<li class="menuItem" id="menuShowAll"  rel="get/downloads/alllist" title="show all">show all (<span id="menuAllCount">n/a</span>)</li>
+				<li class="menuItem" id="menuShowCurrent" rel="get/downloads/currentlist" title="show current">show current (<span id="menuCurrentCount">n/a</span>)</li>
+				<li class="menuItem" id="menuShowFinished" rel="get/downloads/finishedlist" title="show finished">show finished (<span id="menuFinishedCount">n/a</span>)</li>
+				<li class="menuItem" id="menuShowGrabber" rel="get/grabber/list" title="show grabber">show grabber (<span id="menuGrabberCount">n/a</span>)</li>
+			</ul>
+		</div>
+		<div class="seperator"></div>
+		<div id="content">&nbsp;</div>
+		<div id="footer">
+			<div id="footerContent">
+				<div id="footerCopy">&copy; 2010 Lars Chr. Albrecht</div>
+				<div id="footerLicence">MIT Licence</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
